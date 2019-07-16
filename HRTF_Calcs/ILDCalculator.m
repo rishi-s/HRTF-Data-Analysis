@@ -60,5 +60,5 @@ for i=1:187
     end    
 end
 %Plot output.
-heatmap(X,Y,ILDMatrix,'Title','Virtual VBAP HRTF Set ILDs (dB)','XLabel','Azimuth (º)','YLabel','Elevation (º)','FontSize',16,'Colormap',summer);
+heatmap(X,Y,ILDMatrix,'Title','Virtual VBAP HRTF Set ILDs (dB)','XLabel','Azimuth (°)','YLabel','Elevation (°)','FontSize',16,'Colormap',cool);
 

@@ -25,7 +25,7 @@ end
 
 
 figure
-heatmap(X,Y,ErrorMatrix,'XLabel','Azimuth (º)','YLabel','Elevation (º)','FontSize',16,'Colormap',cool,'ColorLimits',[0,12.5]);
+heatmap(X,Y,ErrorMatrix,'XLabel','Azimuth (°)','YLabel','Elevation (°)','FontSize',16,'Colormap',cool,'ColorLimits',[0,550]);
 ErrorLabels=strings(1,3);
 ErrorLabels(1,1)='All_Locs_Mean';
 ErrorLabels(1,2)='All_Locs_StD';

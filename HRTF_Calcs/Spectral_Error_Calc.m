@@ -133,7 +133,7 @@ split=17;
 zeroLocation='top';
 VBAPstyle='-ob';
 Ambistyle='-xr';
-titleFontSize=12;
+titleFontSize=14;
 polarFontSize=11;
 tickFontSize=10;
 polarTitle='Mean unsigned spectral difference (dB)';
@@ -148,7 +148,7 @@ polarplot(mean([VBAPSpecError_U_L(1:split,1:24),VBAPSpecError_U_L(1:split,1)]),V
 ax=gca;
 ax.FontSize=polarFontSize;
 ax.Title.FontSize=titleFontSize;
-ax.Title.String='-45º elevation, lower band (left)';
+ax.Title.String=['-45' char(176) ' elevation, lower band (left)'];
 ax.ThetaZeroLocation = zeroLocation;
 ax.RLim=[0,5];
 ax.RAxis.FontSize=tickFontSize;
@@ -161,7 +161,7 @@ polarplot(mean([VBAPSpecError_U_R(1:split,1:24),VBAPSpecError_U_R(1:split,1)]),V
 ax=gca;
 ax.FontSize=polarFontSize;
 ax.Title.FontSize=titleFontSize;
-ax.Title.String='-45º elevation, lower band (right)';
+ax.Title.String=['-45' char(176) ' elevation, lower band (right)'];
 ax.ThetaZeroLocation = zeroLocation;
 ax.RLim=[0,5];
 ax.RAxis.FontSize=tickFontSize;
@@ -174,7 +174,7 @@ polarplot(mean([VBAPSpecError_U_L(split+1:bands,1:24),VBAPSpecError_U_L(split+1:
 ax=gca;
 ax.FontSize=polarFontSize;
 ax.Title.FontSize=titleFontSize;
-ax.Title.String='-45º elevation, upper band (left)';
+ax.Title.String=['-45' char(176) ' elevation, upper band (left)'];
 ax.ThetaZeroLocation = zeroLocation;
 ax.RLim=[0,14];
 ax.RAxis.FontSize=tickFontSize;
@@ -187,7 +187,7 @@ polarplot(mean([VBAPSpecError_U_R(split+1:bands,1:24),VBAPSpecError_U_R(split+1:
 ax=gca;
 ax.FontSize=polarFontSize;
 ax.Title.FontSize=titleFontSize;
-ax.Title.String='-45º elevation, upper band (right)';
+ax.Title.String=['-45' char(176) ' elevation, upper band (right)'];
 ax.ThetaZeroLocation = zeroLocation;
 ax.RLim=[0,14];
 ax.RAxis.FontSize=tickFontSize;
@@ -200,7 +200,7 @@ polarplot(mean([VBAPSpecError_U_L(1:split,73:96),VBAPSpecError_U_L(1:split,73)])
 ax=gca;
 ax.FontSize=polarFontSize;
 ax.Title.FontSize=titleFontSize;
-ax.Title.String='0º elevation, lower band (left)';
+ax.Title.String=['0' char(176) ' elevation, lower band (left)'];
 ax.ThetaZeroLocation = zeroLocation;
 ax.RLim=[0,5];
 ax.RAxis.FontSize=tickFontSize;
@@ -213,7 +213,7 @@ polarplot(mean([VBAPSpecError_U_R(1:split,73:96),VBAPSpecError_U_R(1:split,73)])
 ax=gca;
 ax.FontSize=polarFontSize;
 ax.Title.FontSize=titleFontSize;
-ax.Title.String='0º elevation, lower band (right)';
+ax.Title.String=['0' char(176) ' elevation, lower band (right)'];
 ax.ThetaZeroLocation = zeroLocation;
 ax.RLim=[0,5];
 ax.RAxis.FontSize=tickFontSize;
@@ -226,7 +226,7 @@ polarplot(mean([VBAPSpecError_U_L(split+1:bands,73:96),VBAPSpecError_U_L(split+1
 ax=gca;
 ax.FontSize=polarFontSize;
 ax.Title.FontSize=titleFontSize;
-ax.Title.String='0º elevation, upper band (left)';
+ax.Title.String=['0' char(176) ' elevation, upper band (left)'];
 ax.ThetaZeroLocation = zeroLocation;
 ax.RLim=[0,7];
 ax.RAxis.FontSize=tickFontSize;
@@ -239,7 +239,7 @@ polarplot(mean([VBAPSpecError_U_R(split+1:bands,73:96),VBAPSpecError_U_R(split+1
 ax=gca;
 ax.FontSize=polarFontSize;
 ax.Title.FontSize=titleFontSize;
-ax.Title.String='0º elevation, upper band (right)';
+ax.Title.String=['0' char(176) ' elevation, upper band (right)'];
 ax.ThetaZeroLocation = zeroLocation;
 ax.RLim=[0,7];
 ax.RAxis.FontSize=tickFontSize;
@@ -252,7 +252,7 @@ polarplot(mean([VBAPSpecError_U_L(1:split,145:168),VBAPSpecError_U_L(1:split,145
 ax=gca;
 ax.FontSize=polarFontSize;
 ax.Title.FontSize=titleFontSize;
-ax.Title.String='45º elevation, lower band (left)';
+ax.Title.String=['45' char(176) ' elevation, lower band (left)'];
 ax.ThetaZeroLocation = zeroLocation;
 ax.RLim=[0,5];
 ax.RAxis.FontSize=tickFontSize;
@@ -263,10 +263,10 @@ polarplot(mean([AmbiSpecError_U_L(1:split,145:168),AmbiSpecError_U_L(1:split,145
 subplot(3,4,10)
 polarplot(mean([VBAPSpecError_U_R(1:split,145:168),VBAPSpecError_U_R(1:split,145)]),VBAPstyle)
 ax=gca;
-ax.Title.String='45º elevation, lower band (right)';
-ax.Title.FontSize=titleFontSize;
-ax.ThetaZeroLocation = zeroLocation;
 ax.FontSize=polarFontSize;
+ax.Title.FontSize=titleFontSize;
+ax.Title.String=['45' char(176) ' elevation, lower band (right)'];
+ax.ThetaZeroLocation = zeroLocation;
 ax.RLim=[0,5];
 ax.RAxis.FontSize=tickFontSize;
 hold all
@@ -278,7 +278,7 @@ polarplot(mean([VBAPSpecError_U_L(split+1:bands,145:168),VBAPSpecError_U_L(split
 ax=gca;
 ax.FontSize=polarFontSize;
 ax.Title.FontSize=titleFontSize;
-ax.Title.String='45º elevation, upper band (left)';
+ax.Title.String=['45' char(176) ' elevation, upper band (left)'];
 ax.ThetaZeroLocation = zeroLocation;
 ax.RLim=[0,7];
 ax.RAxis.FontSize=tickFontSize;
@@ -291,7 +291,7 @@ polarplot(mean([VBAPSpecError_U_R(split+1:bands,145:168),VBAPSpecError_U_R(split
 ax=gca;
 ax.FontSize=polarFontSize;
 ax.Title.FontSize=titleFontSize;
-ax.Title.String='45º elevation, upper band (right)';
+ax.Title.String=['45' char(176) ' elevation, upper band (right)'];
 ax.ThetaZeroLocation = zeroLocation;
 ax.RLim=[0,7];
 ax.RAxis.FontSize=tickFontSize;
