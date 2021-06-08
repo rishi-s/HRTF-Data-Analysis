@@ -2,7 +2,9 @@ function[BestFirstMeans,WorstFirstMeans,BestSecondMeans,WorstSecondMeans,AllMean
     AllNormality,BestNormality,WorstNormality,AllGroups,BestGroups,...
     WorstGroups,BestWorstDiff,FirstDiff,SecondDiff,FirstSecondDiff,...
     EleRecognitionMeans,EleRecog]=CompileLocalisationMeans(iccData,source)
-%COMPIILELocalisationMeans Creates tables of localisation trial means.
+%COMPIILELocalisationMeans Creates tables of localisation trial means and
+% outputs a number of statistical measures and graphical representations of
+% resulting data.
 
 
 % Create unsigned response errors
